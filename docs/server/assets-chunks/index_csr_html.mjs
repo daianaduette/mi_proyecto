@@ -1,0 +1,16 @@
+export default `<!doctype html>
+<html lang="es" data-beasties-container="">
+<head>
+  <meta charset="utf-8">
+  <title>MiProyecto</title>
+  <base href="/mi_proyecto/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>body:before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;background-image:url("./media/undia-UXUSQENT.jpg");background-repeat:repeat;background-size:150px;background-position:center;opacity:.07;z-index:-1;pointer-events:none}</style><link rel="stylesheet" href="styles-XGZ2TU6O.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-XGZ2TU6O.css"></noscript></head>
+<body ngcm="">
+  <app-root></app-root>
+ 
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-NGKDNLNK.js" type="module"></script></body>
+</html>
+`;

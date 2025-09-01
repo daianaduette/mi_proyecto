@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "/mi_proyecto": {},
+    "/mi_proyecto/base": {},
+    "/mi_proyecto/crear-cuenta": {},
+    "/mi_proyecto/personalizados": {},
+    "/mi_proyecto/productos": {},
+    "/mi_proyecto/quienes-somos": {},
+    "/mi_proyecto/servicios": {},
+    "/mi_proyecto/usuarios": {}
+  }
+}

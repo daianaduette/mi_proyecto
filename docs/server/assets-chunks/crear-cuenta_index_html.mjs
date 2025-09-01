@@ -1,0 +1,15 @@
+export default `<!DOCTYPE html><html lang="es" data-beasties-container><head>
+  <meta charset="utf-8">
+  <title>MiProyecto</title>
+  <base href="/mi_proyecto/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>body:before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;background-image:url("./media/undia-UXUSQENT.jpg");background-repeat:repeat;background-size:150px;background-position:center;opacity:.07;z-index:-1;pointer-events:none}
+</style><link rel="stylesheet" href="styles-XGZ2TU6O.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-XGZ2TU6O.css"></noscript><style ng-app-id="ng">.nav[_ngcontent-ng-c1082391767]{width:100%;max-width:1200px;margin:o auto;padding:20px;background-color:#0d1010;border-radius:10px;text-align:center}.seccion[_ngcontent-ng-c1082391767]{padding:15px;margin-bottom:20px;background-color:#070807;border-radius:10px;text-align:center;font-family:cursive}.destacado[_ngcontent-ng-c1082391767]{background-color:#100808;border-left:4px solidrgb(236,218,111)}.seccion_pie[_ngcontent-ng-c1082391767]{padding:1px;margin-bottom:5px;background-color:#0b0a0a;border-radius:10px}img[_ngcontent-ng-c1082391767]{border:2px solid #333;border-radius:8px}.centrada[_ngcontent-ng-c1082391767]{display:block;margin:0 auto}</style></head>
+<body><!--nghm-->
+  <app-root ng-version="19.2.6" _nghost-ng-c1082391767 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c1082391767></router-outlet><app-crear-cuenta ngh="0"><div class="form-container"><ul><br><h2>Ingresa tus datos:</h2></ul><form><div class="mb-3"><label for="nombre" class="form-label">-Nombre completo</label><input type="text" id="nombre" placeholder="Nombre completo" required class="form-control"></div><div class="mb-3"><label for="email" class="form-label">-Correo electrónico</label><input type="email" id="email" placeholder="ejemplo@mail.com" required class="form-control"></div><div class="mb-3"><label for="telefono" class="form-label">-Tu WhatsApp</label><input type="tel" id="telefono" placeholder="xx xxxx xxxx" required class="form-control"></div><div class="mb-3"><label for="password" class="form-label">-Contraseña</label><input type="password" id="password" placeholder="********" required class="form-control"></div><button type="submit" class="btn btn-primary">Crear cuenta</button><ul><li> Registrandote podemos enviarte a tu numero de WhatsApp o mail nuestras novedades</li></ul></form></div><br><br><button routerlink="/" class="btn btn-primary">Volver al menú principal</button></app-crear-cuenta><!----></app-root>
+ 
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-NGKDNLNK.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"0":[{"i":"c2492903019","r":1}]}}]}</script></body></html>`;

@@ -1,0 +1,2 @@
+export default `body:before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;background-image:url("./media/undia-UXUSQENT.jpg");background-repeat:repeat;background-size:150px;background-position:center;opacity:.07;z-index:-1;pointer-events:none}
+`;
