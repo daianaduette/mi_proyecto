@@ -1,0 +1,40 @@
+.card {
+  display: inline-block;
+  text-align: center;
+  border: none;          /* si hay algún borde invisible */
+  padding: 0;            /* eliminamos espacio extra */
+  margin: 0;
+  vertical-align: top; 
+}
+
+.card img {
+  width: 200px;   /* ajusta el tamaño que quieras */
+  height: auto;
+  display: block; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  margin: 0 auto; 
+}
+
+.card img:hover {
+  transform: scale(1.05); /* efecto al pasar el mouse */
+}
+
+.card p {
+  margin-top: 5px;      /* espacio entre imagen y texto */
+  font-size: 14px;
+  font-weight: 500;
+}
+h3 {
+  margin-top: 40px;   /* separa los títulos de lo anterior */
+  margin-bottom: 15px; /* separa del grid de imágenes */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;   /* o center si preferís */
+}
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;          /* separa las tarjetas entre sí */
+  justify-content: flex-start; /* o center si querés que queden centradas */
+}

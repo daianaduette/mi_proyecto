@@ -1,0 +1,42 @@
+<!-- MENÚ PRINCIPAL -->
+<nav class="navbar">
+  <div class="nav-container">
+    <ul class="nav-list">
+      <li><a class="nav-item link" routerLink="/crear-cuenta">Crear cuenta</a></li>
+      <li><a class="nav-item link" routerLink="/productos">Productos</a></li>
+      <li><a class="nav-item link" routerLink="/personalizados">Mirá nuestros trabajos personalizados</a></li>
+      <li><a class="nav-item link" routerLink="/quienes-somos">Quienes somos</a></li>
+      <li><a class="nav-item link" routerLink="/base">Base</a></li>
+      <li><a class="nav-item link" routerLink="/usuarios">Usuarios registrados</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- BARRA DE BÚSQUEDA -->
+<div class="search-bar" style="text-align: center; margin: 20px 0;">
+  <form class="d-flex justify-content-center" (ngSubmit)="buscar()" #form="ngForm">
+    <input
+      class="form-control me-2"
+      type="search"
+      placeholder="Artículo a buscar"
+      aria-label="Search"
+      name="termino"
+      [(ngModel)]="termino"
+      style="max-width: 300px;"
+    /> 
+    <button class="btn btn-outline-dark" type="submit">Quiero ver</button>
+  </form>
+</div>
+
+<!-- TITULO PRINCIPAL CENTRADO -->
+<header class="header" style="text-align: center; margin: 40px 0;">
+  <h1>
+    Bienvenidos a <br><br> 
+    UN DÍA A LA VEZ DECO.<br><br>
+    No cuentes los días,<br>
+    haz que los días cuenten...
+  </h1>
+</header>
+
+<!-- CONTENIDO DE RUTAS -->
+<router-outlet></router-outlet>

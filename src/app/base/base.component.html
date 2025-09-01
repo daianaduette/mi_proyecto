@@ -1,0 +1,27 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Usuario</th>
+      <th>Password</th>
+      <th>Fecha Creación</th>
+      <th>Teléfono</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cliente of clientes">
+      <td>{{ cliente.id }}</td>
+      <td>{{ cliente.usuario }}</td>
+      <td>{{ cliente.password }}</td>
+      <td>{{ cliente.fechaCreacion }}</td>
+      <td>{{ cliente.telefono }}</td>
+      <td>
+        <button class="btn btn-sm btn-primary" (click)="editarCliente(cliente)">Editar</button>
+        <button class="btn btn-sm btn-danger" (click)="eliminarCliente(cliente.id)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<button class="btn btn-success mt-3" (click)="agregarCliente()">Agregar Cliente</button>

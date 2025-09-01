@@ -1,0 +1,70 @@
+<div class="container mt-4">
+
+    <!-- FORMULARIO CREAR/EDITAR -->
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white">
+        <h5>{{ editing ? 'Editar Usuario' : 'Nuevo Usuario' }}</h5>
+      </div>
+      <div class="card-body">
+        <form (ngSubmit)="saveUsuario()">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control" [(ngModel)]="usuario.nombre" name="nombre" required>
+          </div>
+  
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" [(ngModel)]="usuario.email" name="email" required>
+          </div>
+  
+          <button type="submit" class="btn btn-success me-2">{{ editing ? 'Actualizar' : 'Guardar' }}</button>
+          <button type="button" class="btn btn-secondary" (click)="resetForm()" *ngIf="editing">Cancelar</button>
+        </form>
+      </div>
+    </div>
+  
+    <!-- TABLA DE USUARIOS -->
+    <div class="card">
+      <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+        <h5 class="mb-0">Lista de Usuarios</h5>
+        <span class="badge bg-info text-dark">{{ usuarios.length }} registros</span>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-hover mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th class="text-center">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let u of usuarios">
+              <td>{{ u.id }}</td>
+              <td>{{ u.nombre }}</td>
+              <td>{{ u.email }}</td>
+              <td class="text-center">
+                <button class="btn btn-sm btn-outline-warning me-2" (click)="editUsuario(u)">
+                  Editar
+                </button>
+                <button class="btn btn-sm btn-outline-danger" (click)="deleteUsuario(u.id!)">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot *ngIf="usuarios.length === 0">
+            <tr>
+              <td colspan="4" class="text-center text-muted py-4">
+                No hay usuarios registrados
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  
+  </div>
+  <!-- Botón para volver al inicio -->
+<br><br><button class="btn btn-primary" routerLink="/">Volver al menú principal</button>

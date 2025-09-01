@@ -1,0 +1,44 @@
+.nav{
+    width: 100%;
+    max-width: 1200px;
+    margin: o auto;
+    padding: 20px;
+    background-color: rgb(13, 16, 16);
+    border-radius: 10px;
+    text-align: center;
+    }
+    .seccion{ 
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: rgb(7, 8, 7);
+        border-radius: 10px;
+        text-align: center;
+        font-family: cursive;
+    
+    
+    }
+
+.destacado{
+     background-color: #100808;
+     border-left: 4px solidrgb(236,218,111);
+
+}
+
+.seccion_pie{
+    padding: 1px;
+    margin-bottom: 5px;
+    background-color: #0b0a0a;
+    border-radius: 10px;
+
+}
+img {
+    border: 2px solid #333;
+    border-radius: 8px;
+   
+
+  }
+  .centrada {
+    display: block;
+    margin: 0 auto;
+  }
+  

@@ -1,0 +1,36 @@
+.productos-container {
+    padding: 5px;
+  }
+
+  .card-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+  
+
+
+    
+  }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+
+  }
+  .p{
+    text-align: center;
+
+  }

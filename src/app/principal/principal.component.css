@@ -1,0 +1,39 @@
+.nav-list {
+  display: flex;
+  justify-content: center; /* PARA CENTRAR TODO */
+  gap: 40px; /* ESPACIOS*/
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  text-align: center;
+}
+
+
+.nav-item {/* PARTE MENU */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #4b4747;
+  transition: color 0.2s ease;
+  text-align: center;
+}
+
+
+.nav-item:hover {
+  text-decoration: underline;
+  color: #555;
+  text-align: center;
+}
+
+
+
+
+h1{/* TITULO MAS NOMBRE DEL EMPRENDIMIENTO */
+ color: rgb(137, 132, 132);
+ font-style: italic;
+ font-size: 75px; 
+ text-align: center;   
+ background-color: transparent; /* PARA LOGRAR UN FONDO TRANSPARENTE */
+ 
+}
+

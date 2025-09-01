@@ -1,0 +1,9 @@
+.p {
+    display: flex;
+    justify-content: center; /* PARA CENTRAR TODO */
+    gap: 40px; /* ESPACIOS*/
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+  }
