@@ -18,6 +18,4 @@ export const routes: Routes = [
   { path: 'quienes-somos', component: QuienesSomosComponent },
   { path: 'base', component: BaseComponent },
   { path: 'usuarios', component: UsuariosComponent },
-
-
 ];

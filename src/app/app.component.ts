@@ -1,21 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 import { ComponentsheaderComponent } from './componentsheader/componentsheader.component';
-import { BodyComponent } from './components/body/body.component';
-
-
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,FormsModule,ComponentsheaderComponent],
+  imports: [RouterOutlet,ComponentsheaderComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']  // ✅ array, aunque sea un solo archivo
+
 })
 export class AppComponent {
   title = 'mi_proyecto';
-  username: string = 'Paisajes Argentinos';
+  username: string = '';
   ContadorLetras: number = 0;
   condicion: boolean = false;
   addOne(){

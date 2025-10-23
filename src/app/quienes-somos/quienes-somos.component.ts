@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';  // ✅ importar Location
 
 @Component({
   selector: 'app-quienes-somos',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './quienes-somos.component.css'
 })
 export class QuienesSomosComponent {
+  constructor(private location: Location) {}  // ✅ inyectar Location
+// función para el botón
+volver() {
+  this.location.back();
+}
 
 }

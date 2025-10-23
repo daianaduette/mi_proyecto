@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';  // ✅ importar Location
 
 @Component({
   selector: 'app-crear-cuenta',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './crear-cuenta.component.css'
 })
 export class CrearCuentaComponent {
+  constructor(private location: Location) {}  // ✅ inyectar Location
 
+
+  // función para el botón
+  volver() {
+    this.location.back();
+  }
 }

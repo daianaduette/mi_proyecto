@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';  // <-- IMPORTANTE
 import { UsuariosService, Usuario } from '../services/usuarios.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-usuarios',
@@ -15,7 +16,8 @@ export class UsuariosComponent implements OnInit {
   usuario: Usuario = { nombre: '', email: '' }; // para crear/editar
   editing: boolean = false;
 
-  constructor(private usuariosService: UsuariosService) {}
+  constructor(private usuariosService: UsuariosService,private location: Location) {}
+    // ✅ agregado
 
   ngOnInit(): void {
     this.loadUsuarios();
@@ -55,5 +57,12 @@ export class UsuariosComponent implements OnInit {
   resetForm() {
     this.usuario = { nombre: '', email: '' };
     this.editing = false;
+
+    
+  }
+  // ✅ función para el botón
+  volver() {
+    this.location.back();
   }
 }
+

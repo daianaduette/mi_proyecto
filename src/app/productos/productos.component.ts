@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-productos',
@@ -9,8 +10,13 @@ import { Component } from '@angular/core';
 export class ProductosComponent {
   termino: string = '';
 
+  constructor(private location: Location) {} // ✅ agregado
+
   buscar() {
     console.log('Buscando:', this.termino);
-    // para la barra de busqueda
+  }
+
+  volver() {
+    this.location.back(); // ✅ vuelve a la página anterior
   }
 }

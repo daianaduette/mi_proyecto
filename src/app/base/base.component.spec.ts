@@ -7,6 +7,15 @@ import { ClientesService } from '../clientes.service';
   styleUrls: ['./base.component.css']
 })
 export class BaseComponent implements OnInit {
+agregarCliente() {
+throw new Error('Method not implemented.');
+}
+eliminarCliente(arg0: any) {
+throw new Error('Method not implemented.');
+}
+editarCliente(_t12: any) {
+throw new Error('Method not implemented.');
+}
   clientes: any[] = [];
 
   constructor(private clientesService: ClientesService) { }
